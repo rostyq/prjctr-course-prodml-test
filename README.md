@@ -50,4 +50,10 @@ curl -H "Content-Type: application/json" --data "@example.json" -X POST http://l
 
 ## Stage 3
 
-TODO:
+Try:
+
+```
+curl -H "Content-Type: application/json" --data "@example.json" -X POST https://guarded-fortress-68184.herokuapp.com/predict
+```
+
+or open https://guarded-fortress-68184.herokuapp.com/

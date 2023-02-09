@@ -1,9 +1,15 @@
 from joblib import load
 from fastapi import FastAPI
+from starlette.responses import FileResponse
 
 model = load("./model.joblib")
 
 app = FastAPI()
+
+
+@app.get("/")
+def home():
+    return FileResponse("index.html")
 
 
 @app.post("/predict")
